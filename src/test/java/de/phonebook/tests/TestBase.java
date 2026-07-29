@@ -58,8 +58,16 @@ public class TestBase {
                 .until(ExpectedConditions.alertIsPresent());
         if(alert == null){
             return false;
-        }else {
+        }
+        else {
             return true;
         }
     }
+
+    public String newEmail(){
+        int i = (int) ((System.currentTimeMillis()/1000)%3600);
+        String email = "karl" + i + "@gmail.com";
+        return email;
+    }
+
 }
