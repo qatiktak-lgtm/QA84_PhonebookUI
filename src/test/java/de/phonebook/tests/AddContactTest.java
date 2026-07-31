@@ -1,6 +1,8 @@
 package de.phonebook.tests;
 
-import org.openqa.selenium.By;
+import de.phonebook.core.TestBase;
+import de.phonebook.model.Contact;
+import de.phonebook.model.User;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -11,23 +13,33 @@ public class AddContactTest extends TestBase {
     //before -login
     @BeforeMethod
     public void precondition() {
-        click(By.cssSelector("[href='/login']"));
-        fillLoginRegisterForm("qatiktak@gmail.com", "Aa123456!");
-        clickOnLoginButton();
+        if (!app.getUser().isLoginLinkPresent()){
+            app.getUser().clickOnSignOutButton();
+        }
+
+        app.getUser().clickOnLoginLink();
+        app.getUser().fillLoginRegisterForm(new User()
+                .setEmail("qatiktak@gmail.com")
+                .setPassword("Aa123456!"));
+        app.getUser().clickOnLoginButton();
     }
 
     @Test
     public void addContaktPositiveTest() {
-        clickOnAddLink();
-        fillAddContactForm("Oliver", "Kan", "1234567890", "kan@gmail.com", "TelAviv", "QA");
-        clickOnSaveButton();
-        Assert.assertTrue(verifyByName("Oliver"));
+        app.getContact().clickOnAddLink();
+        app.getContact().fillAddContactForm(new Contact()
+                .setName("Oliver")
+                .setLastName("Kan").setPhone("1234567890")
+                .setEmail("kan@gmail.com").setAddress("TelAviv")
+                .setDescription("QA"));
+        app.getContact().clickOnSaveButton();
+        Assert.assertTrue(app.getContact().verifyByName("Oliver"));
     }
 
     // удаляем созданный контакт (зачищаем после себя - button Remove)
     @AfterMethod
     public void postConditions() {
-        removeContact();
+        app.getContact().removeContact();
     }
 
 
