@@ -8,7 +8,8 @@ import org.testng.annotations.BeforeSuite;
 public class TestBase {
 
 // если берем Suite то всегда должен быть ststic, а если открываем все не в одном окне а в разных то можно удалить static
-    protected static ApplicationManager app = new ApplicationManager(System.getProperty("brouser", Browser.CHROME.browserName()));
+    protected static ApplicationManager app = new ApplicationManager(
+            System.getProperty("browser", "chrome")); //Browser.CHROME.browserName())
 
     @BeforeSuite
     public void setUp() {

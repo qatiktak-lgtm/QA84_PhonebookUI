@@ -18,8 +18,8 @@ public class ApplicationManager {
     ContactHelper contact;
     HomePageHelper homePage;
 
-    public ApplicationManager(String brouser) {
-        this.browser = brouser;
+    public ApplicationManager(String browser) {
+        this.browser = browser;
     }
 
     public void init() {
