@@ -1,0 +1,8 @@
+997  [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+1056 [Test worker] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\7500308\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+3151 [Test worker] INFO  de.phonebook.core.TestBase -- Start test isHomeComponentPresentTest
+3251 [Test worker] INFO  de.phonebook.core.TestBase -- Stop test
+3273 [Test worker] INFO  de.phonebook.core.TestBase -- Start test loginRegisteredUserPositiveTest
+4672 [Test worker] INFO  de.phonebook.core.TestBase -- Stop test
+4675 [Test worker] INFO  de.phonebook.core.TestBase -- Start test removeContactTest
+18567 [Test worker] INFO  de.phonebook.core.TestBase -- Stop test

@@ -1,5 +1,5 @@
 .gradle
-build/
+
 /gradle/
 
 ### IntelliJ IDEA ###
@@ -13,5 +13,3 @@ gradlew.bat
 \gradlew
 gradlew
 
-*.log
-*.png
