@@ -1,0 +1,21 @@
+1033 [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\7500308\AppData\Local\JetBrains\IntelliJIdea2026.1\temp-testng-customsuite.xml
+
+1691 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+1759 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\7500308\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+4440 [main] INFO  de.phonebook.core.TestBase -- Start test addContaktPositiveTest with data: [Contact{name='Oliver', lastName='Kan', phone='1234567890', email='kan@gmail.com', address='Rehovot', description='QA'}]
+7881 [main] INFO  de.phonebook.core.TestBase -- PASSED: addContaktPositiveTest
+7881 [main] INFO  de.phonebook.core.TestBase -- Stop test
+7881 [main] INFO  de.phonebook.core.TestBase -- *****************************************
+7884 [main] INFO  de.phonebook.core.TestBase -- Start test addContaktPositiveTest with data: [Contact{name='Kristina', lastName='Kan', phone='12345678901', email='kan1@gmail.com', address='Rehovot', description='QA'}]
+20837 [main] INFO  de.phonebook.core.TestBase -- PASSED: addContaktPositiveTest
+20837 [main] INFO  de.phonebook.core.TestBase -- Stop test
+20837 [main] INFO  de.phonebook.core.TestBase -- *****************************************
+20839 [main] INFO  de.phonebook.core.TestBase -- Start test addContaktPositiveTest with data: [Contact{name='Alex', lastName='Kan', phone='123456789021', email='kan2@gmail.com', address='Rehovot', description='QA'}]
+33163 [main] INFO  de.phonebook.core.TestBase -- PASSED: addContaktPositiveTest
+33163 [main] INFO  de.phonebook.core.TestBase -- Stop test
+33163 [main] INFO  de.phonebook.core.TestBase -- *****************************************
+33165 [main] INFO  de.phonebook.core.TestBase -- Start test addContaktPositiveTest with data: [Contact{name='Oliver1', lastName='Kan', phone='1234567890212', email='kan3@gmail.com', address='Rehovot', description='QA'}]
+45965 [main] INFO  de.phonebook.core.TestBase -- PASSED: addContaktPositiveTest
+45965 [main] INFO  de.phonebook.core.TestBase -- Stop test
+45965 [main] INFO  de.phonebook.core.TestBase -- *****************************************

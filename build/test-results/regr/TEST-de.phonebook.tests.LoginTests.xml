@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.phonebook.tests.LoginTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-08-19T15:59:34.545Z" hostname="AIT-PC" time="1.619">
-  <properties/>
-  <testcase name="loginRegisteredUserPositiveTest" classname="de.phonebook.tests.LoginTests" time="1.561"/>
-  <system-out><![CDATA[17:59:34.557 [Test worker] INFO  de.phonebook.core.TestBase -- Start test loginRegisteredUserPositiveTest
-17:59:36.172 [Test worker] INFO  de.phonebook.core.TestBase -- Stop test
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

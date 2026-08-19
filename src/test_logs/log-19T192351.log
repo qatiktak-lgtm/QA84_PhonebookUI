@@ -1,0 +1,13 @@
+889  [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\7500308\AppData\Local\JetBrains\IntelliJIdea2026.1\temp-testng-customsuite.xml
+
+1572 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Using chromedriver 151.0.7922.138 (resolved driver for Chrome 151)
+1630 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager -- Exporting webdriver.chrome.driver as C:\Users\7500308\.cache\selenium\chromedriver\win64\151.0.7922.138\chromedriver.exe
+3906 [main] INFO  de.phonebook.core.TestBase -- Start test addContaktPositiveTest
+7348 [main] INFO  de.phonebook.core.TestBase -- Stop test
+7360 [main] INFO  de.phonebook.core.TestBase -- Start test addContaktPositiveTest
+20767 [main] INFO  de.phonebook.core.TestBase -- Stop test
+20768 [main] INFO  de.phonebook.core.TestBase -- Start test addContaktPositiveTest
+33270 [main] INFO  de.phonebook.core.TestBase -- Stop test
+33273 [main] INFO  de.phonebook.core.TestBase -- Start test addContaktPositiveTest
+45322 [main] INFO  de.phonebook.core.TestBase -- Stop test
