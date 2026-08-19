@@ -14,6 +14,7 @@ dependencies {
     implementation("org.testng:testng:7.11.0")
 
     implementation("io.github.bonigarcia:webdrivermanager:6.3.4")
+    implementation("ch.qos.logback:logback-classic:1.6.3")
 }
 
 // Конфигурация по умолчанию для стандартной команды: gradle test
@@ -53,3 +54,29 @@ task qa(type: Test) {
         showStackTraces = true
     }
 }
+
+def registerTask(String taskName, String suitePath){
+    tasks.register(taskName, Test){
+        useTestNG(){
+            suites suitePath
+        }
+        testClassesDirs = sourceSets.test.output.classesDirs
+        classpath = sourceSets.test.runtimeClasspath
+
+        // Отключаем кэширование, чтобы тест запускался всегда
+        outputs.upToDateWhen { false }
+
+        if (project.hasProperty('browser')) {
+            systemProperty 'browser', project.getProperty('browser')
+        }
+
+        // Логирование результатов в консоль
+        testLogging {
+            events = ["passed", "skipped", "failed", "standardOut", "standardError"]
+            showStandardStreams = true
+        }
+    }
+}
+
+registerTask('quick', 'src/test/resources/quick.xml')
+registerTask('regr', 'src/test/resources/regression.xml')

@@ -15,8 +15,8 @@ public class BaseHelper {
         this.driver = driver;
     }
 
-    public boolean isElementPresent(By locator){
-        return driver.findElements(locator).size()>0;
+    public boolean isElementPresent(By locator) {
+        return driver.findElements(locator).size() > 0;
     }
 
     public void type(By locator, String text) {
@@ -32,20 +32,21 @@ public class BaseHelper {
     public boolean isAlertPresent() {
         Alert alert = new WebDriverWait(driver, Duration.ofSeconds(20))
                 .until(ExpectedConditions.alertIsPresent());
-        if(alert == null){
+        if (alert == null) {
             return false;
-        }
-        else {
+        } else {
             driver.switchTo().alert().accept(); //click on OK button
             return true;
         }
     }
 
-    public void pause(int millis){
+    public void pause(int millis) {
         try {
             Thread.sleep(millis);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
     }
+
 }
+
